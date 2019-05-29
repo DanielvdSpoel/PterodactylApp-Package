@@ -1,0 +1,31 @@
+{
+    "name": "danielvdspoel/pterodactyl-app",
+    "description": "A laravel package that adds routes for the unoffical pterodactyl app",
+    "type": "libary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël van der Spoel",
+            "email": "dmdevelopment.2017@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"prefer-stable": true,
+	
+    "require": {
+		"php": ">=7.1.3",
+		 "illuminate/support": "5.6.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Danielvdspoel\\PterodactylApp\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"DanielvdSpoel\\PterodactylApp\\PterodactylAppServiceProvider"
+			]
+		}
+	}
+}
